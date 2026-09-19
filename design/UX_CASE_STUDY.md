@@ -1,4 +1,4 @@
-# ClassBridge — UI/UX Case Study
+# CampusFlow â€” UI/UX Case Study
 
 ## 1. Problem
 University scheduling information is often scattered across timetables, spreadsheets, room lists and faculty availability. Users need to answer simple questions quickly:
@@ -23,27 +23,27 @@ Needs clear room and schedule information with minimal navigation.
 
 ```text
 Dashboard
-├── Today / summary
-├── Upcoming classes
-├── Faculty workload
-└── Design decisions
+â”œâ”€â”€ Today / summary
+â”œâ”€â”€ Upcoming classes
+â”œâ”€â”€ Faculty workload
+â””â”€â”€ Design decisions
 
 Timetable
-├── Day selection
-├── Search
-├── Schedule cards
-└── Conflict-aware add flow
+â”œâ”€â”€ Day selection
+â”œâ”€â”€ Search
+â”œâ”€â”€ Schedule cards
+â””â”€â”€ Conflict-aware add flow
 
 Faculty
-├── Search
-├── Department
-└── Workload
+â”œâ”€â”€ Search
+â”œâ”€â”€ Department
+â””â”€â”€ Workload
 
 Courses
-└── Course cards
+â””â”€â”€ Course cards
 
 Rooms
-└── Capacity + occupancy
+â””â”€â”€ Capacity + occupancy
 ```
 
 ## 4. UX Decisions
@@ -90,7 +90,7 @@ Rooms
 ## 7. What I would improve next
 
 - Create a high-fidelity Figma prototype
-- Run usability testing with 3–5 students/coordinators
+- Run usability testing with 3â€“5 students/coordinators
 - Add keyboard-only navigation audit
 - Add a calendar drag-and-drop interaction
 - Measure task completion time for schedule creation

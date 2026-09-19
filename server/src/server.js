@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-const db = new Database(path.join(__dirname, "../classbridge.db"));
+const db = new Database(path.join(__dirname, "../CampusFlow.db"));
 db.pragma("foreign_keys = ON");
 
 app.use(express.json());
@@ -188,7 +188,7 @@ function timetableRows() {
 }
 
 app.get("/api/health", (req, res) => {
-  res.json({ status: "ok", service: "ClassBridge API" });
+  res.json({ status: "ok", service: "CampusFlow API" });
 });
 
 app.get("/api/faculty", (req, res) => {
@@ -379,5 +379,5 @@ if (process.env.NODE_ENV === "production") {
 }
 
 app.listen(PORT, () => {
-  console.log(`ClassBridge API running on http://localhost:${PORT}`);
+  console.log(`CampusFlow API running on http://localhost:${PORT}`);
 });

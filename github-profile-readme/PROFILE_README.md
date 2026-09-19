@@ -1,4 +1,4 @@
-# Hi, I'm Priyadharshini 👋
+# Hi, I'm Priyadharshini ðŸ‘‹
 
 CSE student interested in **UI/UX design, frontend development and practical application engineering**.
 
@@ -14,7 +14,7 @@ CSE student interested in **UI/UX design, frontend development and practical app
 
 ### Featured project
 
-**ClassBridge — UI/UX-first Academic Scheduling System**
+**CampusFlow â€” UI/UX-first Academic Scheduling System**
 
 A responsive university scheduling application focused on information architecture, visual hierarchy, interaction design and practical frontend engineering, backed by a REST API and SQLite.
 

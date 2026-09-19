@@ -109,7 +109,7 @@ function App() {
         <div className="brand">
           <div className="brand-mark">C</div>
           <div>
-            <strong>ClassBridge</strong>
+            <strong>CampusFlow</strong>
             <span>Academic Operations</span>
           </div>
         </div>
@@ -206,7 +206,7 @@ function Dashboard({ dashboard, timetable, faculty }) {
           <div className="hero-overline">SMART SCHEDULING WORKSPACE</div>
           <h2>Plan classes before conflicts become problems.</h2>
           <p>
-            ClassBridge connects courses, rooms and faculty into one
+            CampusFlow connects courses, rooms and faculty into one
             scheduling workflow with automatic conflict validation.
           </p>
         </div>
@@ -234,8 +234,8 @@ function Dashboard({ dashboard, timetable, faculty }) {
                     <span>{item.period}</span>
                   </div>
                   <div className="class-main">
-                    <strong>{item.course_code} · {item.course_name}</strong>
-                    <span>{item.faculty_name} · {item.room_name}</span>
+                    <strong>{item.course_code} Â· {item.course_name}</strong>
+                    <span>{item.faculty_name} Â· {item.room_name}</span>
                   </div>
                   <ChevronRight size={16} className="muted-icon" />
                 </div>
@@ -413,7 +413,7 @@ function Timetable({ faculty, courses, rooms, timetable, refresh, notify }) {
                 <option value="">Select course</option>
                 {courses.map((course) => (
                   <option key={course.id} value={course.id}>
-                    {course.code} — {course.name}
+                    {course.code} â€” {course.name}
                   </option>
                 ))}
               </select>
@@ -433,7 +433,7 @@ function Timetable({ faculty, courses, rooms, timetable, refresh, notify }) {
                 <option value="">Select room</option>
                 {rooms.map((room) => (
                   <option key={room.id} value={room.id}>
-                    {room.name} — {room.type} — capacity {room.capacity}
+                    {room.name} â€” {room.type} â€” capacity {room.capacity}
                   </option>
                 ))}
               </select>
