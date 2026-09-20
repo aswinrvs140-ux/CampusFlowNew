@@ -1,152 +1,122 @@
-# CampusFlow â€” UI/UX-first Academic Scheduling System
+CampusFlow — UI/UX-first Academic Scheduling System
 
-CampusFlow is a **UI/UX-first full-stack university scheduling prototype** that demonstrates how I approach information architecture, interaction design, responsive frontend development, REST APIs and relational data.
+CampusFlow is a UI/UX-first full-stack university scheduling prototype focused on information architecture, interaction design, responsive frontend development, REST APIs, and relational data.
 
-> This is an independent student portfolio project using fictional/demo data. It is not an official university system.
+This is an independent student portfolio project using fictional/demo data. It is not an official university system.
 
-## Why I built it
+Features
 
-I wanted a project where **UI/UX and frontend engineering are visible parts of the work**, while still demonstrating that I can connect a real interface to a backend and database.
+Dashboard with operational overview
 
-The product solves a university scheduling problem: planning classes while preventing room and faculty collisions.
+Timetable with day filtering and search
 
-## What the project demonstrates
+Faculty workload view
 
-### UI/UX
-- Information architecture
-- Visual hierarchy
-- Responsive layouts
-- Component consistency
-- Search/filter interactions
-- Empty, success and error states
-- Modal/form interaction patterns
-- Accessibility-minded controls
-- Design system documentation
+Course catalog
 
-### Frontend
-- React
-- JavaScript
-- Reusable components
-- API-driven UI
-- Responsive CSS
+Room inventory
 
-### Backend
-- Node.js
-- Express
-- REST API
-- SQLite persistence
-- Scheduling validation
+Faculty and room conflict detection
 
-### Testing
-- Automated conflict-detection tests using Node's built-in test runner
+SQLite data persistence
 
-## Main Features
+Responsive interface
 
-- Dashboard with operational overview
-- Timetable with day filtering and search
-- Faculty workload view
-- Course catalog
-- Room inventory
-- Conflict detection for faculty and room allocation
-- SQLite persistence
-- Responsive interface
+UI/UX Focus
 
-## Architecture
+Information architecture
 
-```text
-                React UI
-                   |
-                   | REST / JSON
-                   v
-              Express API
-                   |
-            validation logic
-                   |
-                   v
-                SQLite
-```
+Visual hierarchy
 
-## Project structure
+Responsive layouts
 
-```text
-CampusFlow/
-â”œâ”€â”€ client/
-â”‚   â”œâ”€â”€ src/
-â”‚   â”‚   â”œâ”€â”€ App.jsx
-â”‚   â”‚   â”œâ”€â”€ main.jsx
-â”‚   â”‚   â””â”€â”€ styles.css
-â”‚   â”œâ”€â”€ index.html
-â”‚   â”œâ”€â”€ package.json
-â”‚   â””â”€â”€ vite.config.js
-â”œâ”€â”€ server/
-â”‚   â”œâ”€â”€ src/
-â”‚   â”‚   â”œâ”€â”€ conflict.js
-â”‚   â”‚   â””â”€â”€ server.js
-â”‚   â”œâ”€â”€ test/
-â”‚   â”‚   â””â”€â”€ conflict.test.js
-â”‚   â””â”€â”€ package.json
-â”œâ”€â”€ design/
-â”‚   â””â”€â”€ UX_CASE_STUDY.md
-â”œâ”€â”€ github-profile-readme/
-â”œâ”€â”€ .gitignore
-â”œâ”€â”€ package.json
-â””â”€â”€ README.md
-```
+Reusable components
 
-## Run locally
+Search and filter interactions
+
+Forms and modal patterns
+
+Empty, success, and error states
+
+Accessibility-minded controls
+
+Tech Stack
+
+React
+
+JavaScript
+
+CSS
+
+Node.js
+
+Express
+
+REST API
+
+SQLite
+
+Git & GitHub
+
+Architecture
+
+React Frontend
+      |
+      | REST / JSON
+      v
+Express API
+      |
+      v
+SQLite Database
+
+Run Locally
 
 Requirements:
 
-- Node.js 20+
-- npm
-- VS Code
-- Git
+Node.js 20+
+
+npm
+
+Git
 
 Install dependencies:
 
-```bash
 npm install
-```
 
-Run frontend + backend:
+Run the application:
 
-```bash
 npm run dev
-```
 
 Open:
 
-```text
 http://localhost:5173
-```
 
 Run tests:
 
-```bash
 npm test
-```
 
-## Resume description
+My Contribution
 
-**CampusFlow â€” UI/UX-first Academic Scheduling System | React, JavaScript, Node.js, Express, SQLite**
+My main focus was UI/UX and frontend development.
 
-> Designed and developed a responsive academic scheduling application focused on information architecture, visual hierarchy and interaction design. Built timetable, faculty workload and room interfaces with reusable React components, while integrating a REST API and SQLite backend with conflict-detection logic.
+I worked on the information architecture, visual hierarchy, responsive design, reusable components, and user interactions.
 
-## How I would present my contribution
+I also connected the frontend with the Node.js/Express backend and SQLite database.
 
-> â€œMy main interest is UI/UX and frontend development, so I focused on the information architecture, visual hierarchy, responsive interface and interaction states. I also connected the UI to a Node/Express API and SQLite database so the project works as a real application rather than a static design.â€
+UX Case Study
 
-## Design case study
+The design folder contains the UX case study and design decisions.
 
-See [`design/UX_CASE_STUDY.md`](design/UX_CASE_STUDY.md) for the project rationale, target users, information architecture, UX decisions, design system and accessibility intent.
+Future Improvements
 
-## Future improvements
+High-fidelity Figma prototype
 
-- High-fidelity Figma prototype
-- Usability testing
-- Accessibility audit
-- Drag-and-drop calendar interaction
-- Role-based authentication
-- PostgreSQL deployment
-- Notifications and calendar integration
-- Flutter mobile client
+Usability testing
+
+Accessibility testing
+
+User authentication
+
+PostgreSQL
+
+Mobile application
