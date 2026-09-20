@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+﻿import { useEffect, useMemo, useState } from "react";
 import {
   Activity,
   BookOpen,
@@ -156,7 +156,7 @@ function App() {
                 month: "short"
               }).format(new Date())}
             </div>
-            <div className="avatar">PD</div>
+            <div className="avatar">AR</div>
           </div>
         </header>
 
@@ -234,8 +234,8 @@ function Dashboard({ dashboard, timetable, faculty }) {
                     <span>{item.period}</span>
                   </div>
                   <div className="class-main">
-                    <strong>{item.course_code} Â· {item.course_name}</strong>
-                    <span>{item.faculty_name} Â· {item.room_name}</span>
+                    <strong>{item.course_code}  -  {item.course_name}</strong>
+                    <span>{item.faculty_name}  -  {item.room_name}</span>
                   </div>
                   <ChevronRight size={16} className="muted-icon" />
                 </div>
@@ -413,7 +413,7 @@ function Timetable({ faculty, courses, rooms, timetable, refresh, notify }) {
                 <option value="">Select course</option>
                 {courses.map((course) => (
                   <option key={course.id} value={course.id}>
-                    {course.code} â€” {course.name}
+                    {course.code} Ã¢â‚¬â€ {course.name}
                   </option>
                 ))}
               </select>
@@ -433,7 +433,7 @@ function Timetable({ faculty, courses, rooms, timetable, refresh, notify }) {
                 <option value="">Select room</option>
                 {rooms.map((room) => (
                   <option key={room.id} value={room.id}>
-                    {room.name} â€” {room.type} â€” capacity {room.capacity}
+                    {room.name} Ã¢â‚¬â€ {room.type} Ã¢â‚¬â€ capacity {room.capacity}
                   </option>
                 ))}
               </select>
@@ -654,3 +654,5 @@ function Empty({ text }) {
 }
 
 export default App;
+
+
